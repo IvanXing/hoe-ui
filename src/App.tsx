@@ -1,14 +1,15 @@
 import React from 'react';
+import Button, { ButtonType, ButtonSize } from './components/Button/button'
 
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello world</h1>
-        <h2>Hello world</h2>
-        <h3>Hello world</h3>
-        <hr/>
+        <Button disabled> Hello </Button>
+        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}> Hello </Button>
+        <Button btnType={ButtonType.Link} href="http://www.baidu.com" disabled> Baidu Link </Button>
+        <hr />
         <code>
           const a = 'b'
         </code>
